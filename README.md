@@ -3,11 +3,14 @@
 
 Welcome to **Flare Africa**, the decentralized home for the next generation of African builders on the Flare Network. This project is entirely content-driven and open-source. We believe that by documenting our journey, we empower the entire continent to lead the data revolution.
 
+First off, thank you for considering contributing to Flare Africa! It’s people like you that make the Flare ecosystem thrive.
+
+We follow a structured process to ensure all content is technically accurate, SEO-optimized, and helpful for developers.
 
 
 ##  How to Contribute
 
-We use a "Blog-as-Code" approach. Our entire blog system is powered by **Astro Content Collections** and GitHub. You don't need to be a developer to contribute—you just need to know a little Markdown.
+We use a "Blog-as-Code" approach. Our entire blog system is powered by **Astro Content Collections** and GitHub. You don't need to be a developer to contribute, you just need to know a little Markdown.
 
 ### 1. The Workflow
 
@@ -19,7 +22,7 @@ We use a "Blog-as-Code" approach. Our entire blog system is powered by **Astro C
 
 
 
-##  Writing your Post
+### 2. Writing your Post
 
 All blog posts live in the `src/content/blog/` directory. Your file should be named with a slug format: `my-awesome-post.md`.
 
@@ -35,8 +38,9 @@ Copy this exact block to the top of your `.md` file:
 title: "Beginner’s Guide to Writing Markdown"
 author: "Monday Ese"
 date: "2026-01-06"
-description: "A simple, practical introduction to writing clean and readable Markdown for documentation, blogging, and technical content."
-summary: "This guide walks beginners through the essentials of Markdown—from headings and lists to code blocks, tables, and frontmatter—making it easy to write clean, structured content for blogs, documentation, and GitHub."
+description: "A 160-character summary that tells developers what they will build or learn."
+summary: "A brief 2-3 sentence overview of the technical concepts covered."
+image: "/blog-placeholder.png" # Optional: path to your post thumbnail
 ---
 
 ## Your Content Starts Here
@@ -44,15 +48,41 @@ Write your article body here...
 
 ```
 
-### Content Requirements
 
-* **Images:** Place images in the `public/images/blog/` folder and reference them using `/images/blog/your-image.jpg`.
+
+### 3. Content Requirements
+
+* **Images:** Place images in the `public/blog/` folder and reference them using `/blog/your-image.jpg`.
 * **Tone:** Technical but accessible. We are building for everyone from beginners to pros.
 * **Code:** Use triple backticks (```) for code blocks to enable syntax highlighting.
+* **Code Blocks:** Always include the language (e.g., ````solidity` or ````typescript`).
+* **Flare Network Specs:** If referencing RPCs, specify if you are using **Mainnet**, **Coston**, or **Coston2**.
 
 
 
-## 🛠 Local Development
+
+
+##  Pre-Submission Checklist
+
+Before submitting your Pull Request, ensure:
+
+1. [ ] You have run `npm run build` locally to check for build errors.
+2. [ ] Your description is between 50 and 160 characters (for SEO).
+3. [ ] You have included your name in the `author` field.
+4. [ ] All code snippets are tested on-chain (if applicable).
+
+
+
+##  The Review Process
+
+1. **CI Check:** Our GitHub Action will automatically run an **SEO Audit**. If it fails, please check the logs and update your metadata.
+2. **Technical Review:** A maintainer will review the code logic for Flare Network compatibility.
+3. **Merge:** Once approved, your post will be live at `flareafrica.xyz/blog/your-post`!
+
+
+
+
+##  Local Development
 
 If you want to see how your post looks before submitting, you can run the site locally:
 
@@ -84,3 +114,15 @@ Once your PR is merged, you will:
 * Contribute to the collective knowledge of the African Web3 ecosystem.
 
 **Questions?** Join our community on [Telegram](https://t.me/+_y55Rvcl3fY1ODk0) or follow us on [X](https://x.com/FlareAfrica_) and ask the maintainers!
+
+
+
+
+
+
+
+
+
+
+
+
