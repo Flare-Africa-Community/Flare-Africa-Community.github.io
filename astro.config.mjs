@@ -17,7 +17,7 @@ export default defineConfig({
   site: 'https://flareafrica.xyz',
   integrations: [mdx(), sitemap(), partytown({
     config:{
-      forward: ['dataLayer.push'],
+      forward: ['dataLayer.push', 'gtag'],
     }
   })],
 });
