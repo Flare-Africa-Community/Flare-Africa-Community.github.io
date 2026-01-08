@@ -1,12 +1,11 @@
-
 ---
-title: "Beginner’s Guide to Writing Markdown"
 author: "Ese Monday"
 date: "2026-01-06"
-description: "A simple, practical introduction to writing clean and readable Markdown for documentation, blogging, and technical content."
-summary: "This guide walks beginners through the essentials of Markdown—from headings and lists to code blocks, tables, and frontmatter—making it easy to write clean, structured content for blogs, documentation, and GitHub."
----
+title: "Guide to writing markdown"
+description : "A simple, practical introduction to writing clean and readable Markdown for documentation, blogging, and technical content."
+summary : "A simple, practical introduction to writing clean and readable Markdown for documentation, blogging, and technical content."
 
+---
 
 
 
